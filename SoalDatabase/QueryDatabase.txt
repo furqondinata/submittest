@@ -1,0 +1,11 @@
+2.  SELECT * FROM 'districts';
+    SELECT * FROM 'provinces';
+    SELECT * FROM 'regencies';
+    SELECT * FROM 'villages';
+ 3. RENAME TABLE provinces TO provinsi;
+ 4. RENAME TABLE regencies TO kabupaten_kota;
+ 5. RENAME TABLE districts TO kecamatan;   
+ 6. RENAME TABLE villages TO desa;
+ 7. SELECT desa.id AS id_desa, desa.name AS desa, provinsi.name FROM desa, provinsi WHERE desa.id= 1101010001 AND provinsi.id = 11;
+ 8. SELECT kecamatan.id AS id_kecamatan, desa.name AS kecamatan, provinsi.name FROM kecamatan.id, provinsi WHERE desa.id= 1101 AND provinsi.id = 11;
+ 9. SELECT kabupaten.id AS id_kabupaten_kota, kabupaten.name AS kabupaten_kota, provinsi.name FROM kabupaten.id, provinsi WHERE desa.id= 1101 AND provinsi.id = 11;
